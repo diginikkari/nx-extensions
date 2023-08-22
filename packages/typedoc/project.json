@@ -32,9 +32,18 @@
             "input": "./packages/typedoc",
             "glob": "executors.json",
             "output": "."
+          },
+          {
+            "input": "./packages/typedoc",
+            "glob": "migrations.json",
+            "output": "."
           }
         ]
       }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs typedoc {args.ver} {args.tag}",
+      "dependsOn": ["build"]
     },
     "lint": {
       "executor": "@nx/linter:eslint",

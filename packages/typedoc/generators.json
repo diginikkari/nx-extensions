@@ -1,0 +1,30 @@
+{
+  "name": "typedoc",
+  "version": "0.1",
+  "schematics": {
+    "typedoc": {
+      "factory": "./src/generators/typedoc/generator#configurationSchematic",
+      "schema": "./src/generators/typedoc/schema.json",
+      "description": "typedoc generator"
+    },
+    "init": {
+      "factory": "./src/generators/init/generator#initSchematic",
+      "schema": "./src/generators/init/schema.json",
+      "description": "init schematic",
+      "hidden": true
+    }
+  },
+  "generators": {
+    "typedoc": {
+      "factory": "./src/generators/typedoc/generator",
+      "schema": "./src/generators/typedoc/schema.json",
+      "description": "typedoc generator"
+    },
+    "init": {
+      "factory": "./src/generators/init/generator#initGenerator",
+      "schema": "./src/generators/init/schema.json",
+      "description": "init schematic",
+      "hidden": true
+    }
+  }
+}
