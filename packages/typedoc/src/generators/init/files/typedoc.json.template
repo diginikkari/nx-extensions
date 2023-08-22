@@ -1,0 +1,13 @@
+{
+  "name": "Monorepo Documentation",
+  "entryPoints": ["./dist/docs/**/*.json"],
+  "entryPointStrategy": "merge",
+  "includeVersion": true,
+  "logLevel": "Info",
+  "plugin": [
+    "typedoc-plugin-rename-defaults",
+    "typedoc-plugin-zod",
+    "typedoc-plugin-markdown",
+    "./dist/libs/web/typedoc-wiki"
+  ]
+}

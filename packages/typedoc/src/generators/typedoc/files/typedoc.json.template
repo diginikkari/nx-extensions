@@ -1,0 +1,7 @@
+{
+  "extends": ["<%= offsetFromRoot %>typedoc.base.json"],
+  "json": "<%= offsetFromRoot %>dist/docs/<%= projectRoot %>/<%= projectName %>.json",
+  "readme": "./README.md",
+  "tsconfig": "tsconfig.lib.json",
+  "entryPoints": ["./src/lib"]
+}
