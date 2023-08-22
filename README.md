@@ -1,3 +1,7 @@
 # NxExtensions
 
-This repositiory contains extensions and NPM packages
+This repositiory contains NX extensions
+
+## Extensions
+
+- [Typedoc](packages/typedoc/README.md)
